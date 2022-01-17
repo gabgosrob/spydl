@@ -1,6 +1,6 @@
 from user import User
 
-def main():
+def main() -> None:
 	username = input("username: ")
 	password = input("password: ")
 	user = User(username, password)

@@ -4,7 +4,7 @@ from spypoint import Client, Photo
 from utils import save_image_from_data
 
 class User:
-	def __init__(self, username: str, password: str):
+	def __init__(self, username: str, password: str) -> None:
 		self.client = self.login(username, password)
 
 	def login(self, username: str, password: str) -> Client:
