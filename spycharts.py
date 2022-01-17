@@ -1,12 +1,13 @@
 import requests
 from typing import List
+from getpass import getpass
 from user import User
 from spypoint import Photo
 from utils import save_image_from_data
 
 def main() -> None:
 	username = input("username: ")
-	password = input("password: ")
+	password = getpass("password: ")
 	
 	try:
 		user = User(username, password)
