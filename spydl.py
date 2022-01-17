@@ -18,7 +18,7 @@ def main() -> None:
 	except Exception as e:
 		print("Something went wrong. Check your login info or try again later.")
 
-def download_all_photos(photos: List[Photo]):
+def download_all_photos(photos: List[Photo]) -> None:
 	for photo in photos:
 		download_photo(photo)
 
