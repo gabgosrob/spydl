@@ -1,4 +1,3 @@
-import requests
 from typing import List
 from spypoint import Client, Photo
 
